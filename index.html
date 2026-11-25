@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IRON//SHIFT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="shell">
+    <header><div class="brand">IRON<span>//</span>SHIFT</div><div class="status"><i></i> LIVE COMBAT SIMULATION</div></header>
+    <section class="hud">
+      <div><label>PLAYER // UNIT-07</label><div class="bar"><b id="playerHealth"></b></div><strong id="healthText">100 / 100</strong></div>
+      <div class="round">ROUND <em id="round">01</em><small id="message">SELECT YOUR LOADOUT</small></div>
+      <div class="enemy"><label>ALIENS // XENO SWARM</label><div class="bar red"><b id="enemyHealth"></b></div><strong id="enemyText">300 / 300</strong></div>
+    </section>
+    <section class="arena-wrap"><canvas id="arena" width="960" height="460"></canvas><div class="scanline"></div></section>
+    <section class="controls">
+      <div class="loadouts"><button class="loadout active" data-weapon="pistols"><span class="icon">✦</span><div><b>DUAL PISTOLS</b><small>RANGED // RAPID FIRE</small></div></button><button class="loadout" data-weapon="sword"><span class="icon">◈</span><div><b>SWORD + SHIELD</b><small>MELEE // DEFENSIVE</small></div></button></div>
+      <div class="help"><span><kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd> MOVE <small>(A/D)</small></span><span><kbd>W</kbd> ATTACK <small>(SPACE)</small></span><span><kbd>SHIFT</kbd> BLOCK</span></div>
+      <button id="start" class="start">START GAME <span>↗</span></button>
+    </section>
+    <footer><span>© 2088 NEON FORGE INDUSTRIES</span><span>BUILD 0.7.4 // SECTOR 09</span></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
